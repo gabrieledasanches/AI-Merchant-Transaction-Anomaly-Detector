@@ -61,6 +61,16 @@ This is where the product comes to life. Raw anomaly flags aren't useful to a se
 
 ---
 
+## Product Success Metrics
+
+- **Alert precision**: percent of flagged transactions confirmed as suspicious
+- **False positive rate**: keep below a defined threshold to avoid merchant fatigue
+- **Merchant action rate**: percent of alerts that lead to a review or action within 24 hours
+- **Chargeback reduction**: change in chargeback rate over 60-90 days after rollout
+- **Alert engagement**: open rate and follow-up actions on alerts
+  
+---
+
 ## Product Roadmap
 
 ### Phase 1 — MVP (Weeks 1-4)
@@ -89,6 +99,15 @@ This is where the product comes to life. Raw anomaly flags aren't useful to a se
 | **Per-merchant baselines** | A $500 transaction is normal for a jewelry store but suspicious for a coffee shop. Context-aware detection reduces false positives |
 | **AI explanations over raw scores** | Merchants aren't data scientists. Plain-English alerts drive action; anomaly scores don't |
 | **Human-in-the-loop** | The system surfaces signals but doesn't auto-block transactions. Trust and merchant experience come first |
+
+---
+
+## Risks & Tradeoffs
+
+- **Sensitivity vs. noise**: higher sensitivity catches more fraud but can overwhelm merchants
+- **Cold start merchants**: limited history can reduce accuracy; requires conservative defaults
+- **LLM cost and latency**: AI explanations add value but require careful rate and cost control
+- **Merchant trust**: explanations must be consistent and verifiable to avoid confusion
 
 ---
 
